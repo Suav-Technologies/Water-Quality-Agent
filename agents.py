@@ -1,7 +1,6 @@
 from crewai import LLM, Agent
 import os
 import dotenv
-from langchain_ibm import WatsonxLLM
 
 dotenv.load_dotenv()
 
