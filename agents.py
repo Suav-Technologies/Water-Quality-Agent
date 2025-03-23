@@ -7,11 +7,16 @@ dotenv.load_dotenv()
 
 from tools import *
 
-llm = WatsonxLLM(
-    model_id="ibm/granite-3-8b-instruct",
-    url="https://us-south.ml.cloud.ibm.com",
-    apikey=os.environ.get("WATSONX_API_KEY"),
-    project_id=os.environ.get("WATSONX_PROJECT_ID")
+WATSONX_URL = os.getenv("WATSONX_URL")
+WATSONX_APIKEY = os.getenv("WATSONX_APIKEY")
+WATSONX_PROJECT_ID = os.getenv("WATSONX_PROJECT_ID")
+
+
+llm = LLM(
+    model="watsonx/ibm/granite-3-8b-instruct",
+    base_url=WATSONX_URL,
+    apikey=WATSONX_APIKEY,
+    project_id=WATSONX_PROJECT_ID,
 )
 
 water_quality_agent = Agent(
