@@ -85,3 +85,7 @@ The core of this project lies in the application of multi-agent AI systems throu
 *   **(Potential for Advanced AI):** The framework allows for integration with powerful Large Language Models (LLMs), such as those provided by IBM watsonx.ai used in this project, for more sophisticated natural language understanding (in the Control Center agent), complex data interpretation, and predictive modeling.
 
 This AI-driven approach enables more efficient, data-informed, and proactive water resource management compared to traditional methods.
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
